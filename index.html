@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohit Honakhande - Data Analyst</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+   <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Rohit Honakhande</a>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="resume.html" class="nav-link">Resume</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Transforming Data into <span class="highlight">Business Insights</span></h1>
+                <p>Data Analyst skilled in SQL, Python, and Tableau. Turning complex datasets into actionable recommendations.</p>
+                <div class="hero-buttons">
+                    <a href="projects.html" class="btn btn-primary">View My Projects</a>
+                    <a href="resume.html" class="btn btn-secondary">View Resume</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="placeholder-image">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Preview -->
+    <section class="skills-preview">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">R</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Visualization</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Tableau</span>
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">Matplotlib</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Excel</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Jupyter</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="featured-projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" onclick="openProjectModal('ecommerce-analysis')">
+                    <div class="project-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>E-commerce Analysis</h3>
+                    <p class="project-description">Customer behavior and sales performance analysis</p>
+                    
+                    <div class="project-highlights">
+                        <div class="highlight">
+                            <span class="highlight-value">25% → 18%</span>
+                            <span class="highlight-label">Churn Reduction</span>
+                        </div>
+                        <div class="highlight">
+                            <span class="highlight-value">$125K</span>
+                            <span class="highlight-label">Annual Savings</span>
+                        </div>
+                    </div>
+
+                    <div class="project-tools">
+                        <span class="tool">SQL</span>
+                        <span class="tool">Python</span>
+                        <span class="tool">Tableau</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/yourname/ecommerce-analysis" class="link-btn" onclick="event.stopPropagation()" target="_blank">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="https://public.tableau.com/your-dashboard" class="link-btn" onclick="event.stopPropagation()" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Demo
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" onclick="openProjectModal('covid-dashboard')">
+                    <div class="project-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>COVID-19 Dashboard</h3>
+                    <p class="project-description">Interactive visualization of pandemic trends</p>
+                    
+                    <div class="project-highlights">
+                        <div class="highlight">
+                            <span class="highlight-value">10K+</span>
+                            <span class="highlight-label">Views</span>
+                        </div>
+                        <div class="highlight">
+                            <span class="highlight-value">Real-time</span>
+                            <span class="highlight-label">Data</span>
+                        </div>
+                    </div>
+
+                    <div class="project-tools">
+                        <span class="tool">Python</span>
+                        <span class="tool">Plotly</span>
+                        <span class="tool">Pandas</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/yourname/covid-dashboard" class="link-btn" onclick="event.stopPropagation()" target="_blank">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="https://your-name-covid-dashboard.streamlit.app" class="link-btn" onclick="event.stopPropagation()" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="projects.html" class="btn btn-outline">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p class="contact-subtitle">I'm always open to discussing data analysis opportunities and collaborations</p>
+            
+            <div class="contact-info-grid">
+                <div class="contact-method">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Phone</h3>
+                        <p>+91 9964672812</p>
+                        <a href="tel:+919964672812" class="contact-link">Call Now</a>
+                    </div>
+                </div>
+
+                <div class="contact-method">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Email</h3>
+                        <p>rohithonakhande2@gmail.com</p>
+                        <a href="mailto:rohithonakhande2@gmail.com" class="contact-link">Send Email</a>
+                    </div>
+                </div>
+
+                <div class="contact-method">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Location</h3>
+                        <p>Open to Remote Opportunities</p>
+                        <span class="contact-link">Available Worldwide</span>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-tableau"></i></a>
+                <a href="#"><i class="fab fa-kaggle"></i></a>
+            </div>
+            <p>&copy; 2024 Rohit Honakhande. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Project Detail Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-content">
+                <!-- Dynamic content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Include projects data and modal functionality -->
+    <script>
+        // Include the projects data and modal functions
+        const allProjects = [
+            {
+                id: "ecommerce-analysis",
+                title: "E-commerce Customer Analysis",
+                description: "Customer behavior and sales performance analysis to reduce churn",
+                category: ["sql", "python", "dashboard"],
+                tools: ["SQL", "Python", "Tableau", "Pandas"],
+                highlights: [
+                    {value: "25% → 18%", label: "Churn Reduction"},
+                    {value: "$125K", label: "Annual Savings"},
+                    {value: "45%", label: "Retention Improvement"}
+                ],
+                metrics: [
+                    {value: "25% → 18%", label: "Churn Rate Reduction"},
+                    {value: "$125K", label: "Annual Cost Savings"},
+                    {value: "45%", label: "Retention Improvement"}
+                ],
+                insights: [
+                    "3+ purchases in first month = 60% higher retention",
+                    "AOV above $75 = 45% lower churn rate", 
+                    "45+ days between purchases = 3x churn risk"
+                ],
+                businessImpact: [
+                    "Implemented targeted email campaigns for at-risk customers",
+                    "Created customer segmentation for personalized marketing",
+                    "Reduced churn rate by 7 percentage points"
+                ],
+                links: {
+                    github: "https://github.com/yourname/ecommerce-analysis",
+                    demo: "https://public.tableau.com/your-dashboard"
+                },
+                icon: "shopping-cart",
+                featured: true
+            },
+            {
+                id: "covid-dashboard",
+                title: "COVID-19 Data Visualization", 
+                description: "Interactive dashboard tracking pandemic trends and vaccination rates",
+                category: ["python", "dashboard"],
+                tools: ["Python", "Plotly", "Pandas", "Requests"],
+                highlights: [
+                    {value: "10K+", label: "Views"},
+                    {value: "Real-time", label: "Data"},
+                    {value: "5+", label: "Data Sources"}
+                ],
+                metrics: [
+                    {value: "10K+", label: "Dashboard Views"},
+                    {value: "Real-time", label: "Data Updates"},
+                    {value: "95%", label: "User Satisfaction"}
+                ],
+                insights: [
+                    "Vaccination rates correlated with case reduction",
+                    "Regional hotspots identified 2 weeks earlier",
+                    "Mobile usage dominated dashboard access"
+                ],
+                businessImpact: [
+                    "Provided real-time data for public health decisions",
+                    "Enabled trend forecasting for resource allocation", 
+                    "Improved public awareness through accessible visualization"
+                ],
+                links: {
+                    github: "https://github.com/yourname/covid-dashboard",
+                    demo: "https://your-name-covid-dashboard.streamlit.app"
+                },
+                icon: "heartbeat",
+                featured: false
+            }
+        ];
+
+        // Open project modal
+        function openProjectModal(projectId) {
+            const project = allProjects.find(p => p.id === projectId);
+            if (!project) return;
+
+            const modalContent = document.getElementById('modal-content');
+            modalContent.innerHTML = `
+                <div class="modal-header">
+                    <div class="modal-icon">
+                        <i class="fas fa-${project.icon}"></i>
+                    </div>
+                    <div>
+                        <h2>${project.title}</h2>
+                        <div class="modal-tools">
+                            ${project.tools.map(tool => `<span class="tool">${tool}</span>`).join('')}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-body">
+                    <div class="key-metrics">
+                        ${project.metrics.map(metric => `
+                            <div class="metric-card">
+                                <div class="metric-value">${metric.value}</div>
+                                <div class="metric-label">${metric.label}</div>
+                            </div>
+                        `).join('')}
+                    </div>
+
+                    <div class="insights-section">
+                        <h3>Key Insights</h3>
+                        <div class="insights-grid">
+                            ${project.insights.map(insight => `
+                                <div class="insight-item">
+                                    <i class="fas fa-chart-line"></i>
+                                    <div>
+                                        <p>${insight}</p>
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+
+                    <div class="actions-section">
+                        <h3>Business Impact</h3>
+                        <ul class="impact-list">
+                            ${project.businessImpact.map(impact => `<li>${impact}</li>`).join('')}
+                        </ul>
+                    </div>
+
+                    <div class="modal-links">
+                        <a href="${project.links.github}" class="btn btn-primary" target="_blank">
+                            <i class="fab fa-github"></i> View Source Code
+                        </a>
+                        <a href="${project.links.demo}" class="btn btn-secondary" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            `;
+
+            document.getElementById('project-modal').style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Close modal functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const modal = document.getElementById('project-modal');
+            const closeBtn = document.querySelector('.close-modal');
+            
+            closeBtn.addEventListener('click', () => {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            });
+            
+            window.addEventListener('click', (event) => {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            });
+            
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape') {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        });
+    </script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
