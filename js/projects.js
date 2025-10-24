@@ -64,38 +64,38 @@ const allProjects = [
         },
         icon: "heartbeat"
         },
-    {
-        id: "sales-analytics",
-        title: "Sales Performance Dashboard",
-        description: "Regional sales analysis and performance tracking with forecasting",
-        category: ["sql", "dashboard"],
-        tools: ["Power BI", "SQL", "DAX", "Excel"],
-        highlights: [
-            {value: "15%", label: "Revenue Increase"},
-            {value: "15+", label: "KPIs Tracked"},
-            {value: "Real-time", label: "Reporting"}
-        ],
-        metrics: [
-            {value: "15%", label: "Revenue Growth"},
-            {value: "20%", label: "Faster Reporting"},
-            {value: "50+", label: "Users Served"}
-        ],
-        insights: [
-            "West region outperforming others by 35%",
-            "Q4 sales consistently 40% higher than Q1",
-            "Product category A driving 60% of revenue"
-        ],
-        businessImpact: [
-            "Enabled data-driven sales strategy decisions",
-            "Reduced manual reporting time by 8 hours/week",
-            "Improved regional performance visibility by 50%"
-        ],
-        links: {
-            github: "https://github.com/yourname/sales-analytics",
-            demo: "https://app.powerbi.com/your-dashboard"
-        },
-        icon: "chart-line"
-    }
+{
+    id: "play-store-analysis",
+    title: "Google Play Store App Analysis",
+    description: "Market analysis to identify successful app strategies and high-opportunity categories",
+    category: ["python", "data-analysis", "business-intelligence"],
+    tools: ["Python", "Pandas", "Matplotlib", "Seaborn", "Jupyter"],
+    highlights: [
+        {value: "13.6% → 0%", label: "Data Quality Improved"},
+        {value: "200x", label: "Opportunity Ratio"},
+        {value: "168x", label: "Install Advantage"}
+    ],
+    metrics: [
+        {value: "13.6% → 0%", label: "Missing Data Handled"},
+        {value: "200x", label: "Best Opportunity Ratio"},
+        {value: "168x", label: "Free vs Paid Install Ratio"}
+    ],
+    insights: [
+        "VIDEO_PLAYERS category = 200x better install-to-competition ratio",
+        "Free apps = 168x more installs than paid apps",
+        "Reviews & Installs = 0.63 correlation (strongest success driver)"
+    ],
+    businessImpact: [
+        "Identified 3 high-opportunity categories for new app development",
+        "Recommended free-first pricing strategy for market entry",
+        "Provided data-driven category selection framework for investors"
+    ],
+    links: {
+        github: "https://github.com/Rohit9964/Google-Play-Store-App-Analysis",
+        demo: "https://nbviewer.org/github/Rohit9964/Google-Play-Store-App-Analysis/blob/main/Google%20Play%20Store%20App%20Analysis.ipynb"
+    },
+    icon: "mobile-alt"
+}
 ];
 
 // Display projects in grid
