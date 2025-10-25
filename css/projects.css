@@ -349,3 +349,43 @@
     justify-content: center;
     gap: 0.5rem;
 }
+
+/* Section Titles */
+.section-title {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.section-title i {
+    color: var(--primary-color);
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 2.5rem;
+}
+
+/* Projects Sections */
+.projects-section {
+    padding: 60px 0;
+}
+
+.analytical-projects {
+    background: var(--white);
+}
+
+.development-projects {
+    background: var(--bg-light);
+}
+
+.no-projects {
+    text-align: center;
+    color: var(--text-light);
+    font-style: italic;
+    padding: 2rem;
+}

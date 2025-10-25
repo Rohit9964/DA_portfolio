@@ -11,76 +11,96 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="index.html">Rohit Honakhande</a>
-            </div>
-            <div class="nav-menu">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="about.html" class="nav-link">About</a>
-                <a href="projects.html" class="nav-link">Projects</a>
-                <a href="resume.html" class="nav-link">Resume</a>
-            </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <a href="index.html">Rohit Honakhande</a>
         </div>
-    </nav>
-
-    <!-- Projects Header -->
-    <section class="projects-page-header">
-        <div class="container">
-            <h1>Data Analysis Projects</h1>
-            <p>Click any project to explore the analysis and insights</p>
-            
-            <!-- Project Filters -->
-            <div class="project-filters">
-                <button class="filter-btn active" data-filter="all">All Projects</button>
-                <button class="filter-btn" data-filter="sql">SQL</button>
-                <button class="filter-btn" data-filter="python">Python</button>
-                <button class="filter-btn" data-filter="dashboard">Dashboards</button>
-                <button class="filter-btn" data-filter="analysis">Analysis</button>
-            </div>
+        <div class="nav-menu">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="resume.html" class="nav-link">Resume</a>
         </div>
-    </section>
-
-    <!-- Projects Grid -->
-    <section class="projects-grid-section">
-        <div class="container">
-            <div id="projects-container" class="projects-container">
-                <!-- Projects will be loaded here dynamically -->
-                <div class="loading">Loading projects...</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Project Detail Modal -->
-    <div id="project-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <div id="modal-content">
-                <!-- Dynamic content will be inserted here -->
-            </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </div>
+</nav>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/rohit-honakhande-083538259/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/Rohit9964"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-tableau"></i></a>
-                <a href="#"><i class="fab fa-kaggle"></i></a>
-            </div>
-            <p>&copy; 2025 Rohit Honakhande. All rights reserved.</p>
+<!-- Projects Header -->
+<section class="projects-page-header">
+    <div class="container">
+        <h1>My Projects</h1>
+        <p>Click any project to explore the details and insights</p>
+
+        <!-- Project Filters -->
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="analytical">Analytical Projects</button>
+            <button class="filter-btn" data-filter="development">Development Projects</button>
+            <button class="filter-btn" data-filter="python">Python</button>
+            <button class="filter-btn" data-filter="java">Java</button>
         </div>
-    </footer>
+    </div>
+</section>
 
-    <script src="js/projects.js"></script>
+<!-- Analytical Projects Section -->
+<section class="projects-section analytical-projects">
+    <div class="container">
+        <h2 class="section-title">
+            <i class="fas fa-chart-bar"></i>
+            Analytical Projects
+        </h2>
+        <p class="section-subtitle">Data analysis, visualization, and machine learning projects</p>
+
+        <div id="analytical-container" class="projects-container">
+            <!-- Analytical projects will be loaded here -->
+        </div>
+    </div>
+</section>
+
+<!-- Development Projects Section -->
+<section class="projects-section development-projects">
+    <div class="container">
+        <h2 class="section-title">
+            <i class="fas fa-code"></i>
+            Development Projects
+        </h2>
+        <p class="section-subtitle">Software development and backend projects</p>
+
+        <div id="development-container" class="projects-container">
+            <!-- Development projects will be loaded here -->
+        </div>
+    </div>
+</section>
+
+<!-- Project Detail Modal -->
+<div id="project-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div id="modal-content">
+            <!-- Dynamic content will be inserted here -->
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/rohit-honakhande-083538259/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Rohit9964"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-tableau"></i></a>
+            <a href="#"><i class="fab fa-kaggle"></i></a>
+        </div>
+        <p>&copy; 2025 Rohit Honakhande. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="js/projects.js"></script>
 </body>
 </html>

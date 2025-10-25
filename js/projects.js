@@ -1,109 +1,160 @@
-// All projects data in one place - no separate JSON file needed
+// All projects data with projectType classification
 const allProjects = [
+    // ========== ANALYTICAL PROJECTS ==========
     {
-        id: "ecommerce-analysis",
-        title: "E-commerce Customer Analysis",
-        description: "Customer behavior and sales performance analysis to reduce churn",
-        category: ["sql", "python", "dashboard"],
-        tools: ["SQL", "Python", "Tableau", "Pandas"],
+        id: "play-store-analysis",
+        title: "Google Play Store App Analysis",
+        description: "Market analysis to identify successful app strategies and high-opportunity categories",
+        projectType: "analytical",
+        category: ["python", "data-analysis", "business-intelligence", "analytical"],
+        tools: ["Python", "Pandas", "Matplotlib", "Seaborn", "Jupyter"],
         highlights: [
-            {value: "25% → 18%", label: "Churn Reduction"},
-            {value: "$125K", label: "Annual Savings"},
-            {value: "45%", label: "Retention Improvement"}
+            {value: "13.6% → 0%", label: "Data Quality Improved"},
+            {value: "200x", label: "Opportunity Ratio"},
+            {value: "168x", label: "Install Advantage"}
         ],
         metrics: [
-            {value: "25% → 18%", label: "Churn Rate Reduction"},
-            {value: "$125K", label: "Annual Cost Savings"},
-            {value: "45%", label: "Retention Improvement"}
+            {value: "13.6% → 0%", label: "Missing Data Handled"},
+            {value: "200x", label: "Best Opportunity Ratio"},
+            {value: "168x", label: "Free vs Paid Install Ratio"}
         ],
         insights: [
-            "3+ purchases in first month = 60% higher retention",
-            "AOV above $75 = 45% lower churn rate", 
-            "45+ days between purchases = 3x churn risk"
+            "VIDEO_PLAYERS category = 200x better install-to-competition ratio",
+            "Free apps = 168x more installs than paid apps",
+            "Reviews & Installs = 0.63 correlation (strongest success driver)"
         ],
         businessImpact: [
-            "Implemented targeted email campaigns for at-risk customers",
-            "Created customer segmentation for personalized marketing",
-            "Reduced churn rate by 7 percentage points"
+            "Identified 3 high-opportunity categories for new app development",
+            "Recommended free-first pricing strategy for market entry",
+            "Provided data-driven category selection framework for investors"
         ],
         links: {
-            github: "https://github.com/yourname/ecommerce-analysis",
-            demo: "https://public.tableau.com/your-dashboard"
+            github: "https://github.com/Rohit9964/Google-Play-Store-App-Analysis",
+            demo: "https://nbviewer.org/github/Rohit9964/Google-Play-Store-App-Analysis/blob/main/Google%20Play%20Store%20App%20Analysis.ipynb"
         },
-        icon: "shopping-cart"
-        },
-    {
-        id: "covid-dashboard",
-        title: "COVID-19 Data Visualization", 
-        description: "Interactive dashboard tracking pandemic trends and vaccination rates",
-        category: ["python", "dashboard"],
-        tools: ["Python", "Plotly", "Pandas", "Requests"],
-        highlights: [
-            {value: "10K+", label: "Views"},
-            {value: "Real-time", label: "Data"},
-            {value: "5+", label: "Data Sources"}
-        ],
-        metrics: [
-            {value: "10K+", label: "Dashboard Views"},
-            {value: "Real-time", label: "Data Updates"},
-            {value: "95%", label: "User Satisfaction"}
-        ],
-        insights: [
-            "Vaccination rates correlated with case reduction",
-            "Regional hotspots identified 2 weeks earlier",
-            "Mobile usage dominated dashboard access"
-        ],
-        businessImpact: [
-            "Provided real-time data for public health decisions",
-            "Enabled trend forecasting for resource allocation", 
-            "Improved public awareness through accessible visualization"
-        ],
-        links: {
-            github: "https://github.com/yourname/covid-dashboard",
-            demo: "https://your-name-covid-dashboard.streamlit.app"
-        },
-        icon: "heartbeat"
-        },
-{
-    id: "play-store-analysis",
-    title: "Google Play Store App Analysis",
-    description: "Market analysis to identify successful app strategies and high-opportunity categories",
-    category: ["python", "data-analysis", "business-intelligence"],
-    tools: ["Python", "Pandas", "Matplotlib", "Seaborn", "Jupyter"],
-    highlights: [
-        {value: "13.6% → 0%", label: "Data Quality Improved"},
-        {value: "200x", label: "Opportunity Ratio"},
-        {value: "168x", label: "Install Advantage"}
-    ],
-    metrics: [
-        {value: "13.6% → 0%", label: "Missing Data Handled"},
-        {value: "200x", label: "Best Opportunity Ratio"},
-        {value: "168x", label: "Free vs Paid Install Ratio"}
-    ],
-    insights: [
-        "VIDEO_PLAYERS category = 200x better install-to-competition ratio",
-        "Free apps = 168x more installs than paid apps",
-        "Reviews & Installs = 0.63 correlation (strongest success driver)"
-    ],
-    businessImpact: [
-        "Identified 3 high-opportunity categories for new app development",
-        "Recommended free-first pricing strategy for market entry",
-        "Provided data-driven category selection framework for investors"
-    ],
-    links: {
-        github: "https://github.com/Rohit9964/Google-Play-Store-App-Analysis",
-        demo: "https://nbviewer.org/github/Rohit9964/Google-Play-Store-App-Analysis/blob/main/Google%20Play%20Store%20App%20Analysis.ipynb"
+        icon: "mobile-alt"
     },
-    icon: "mobile-alt"
-}
+    {
+        id: "astronomical-predictor",
+        title: "Astronomical Events Predictor",
+        description: "Machine learning model to predict astronomical events using multi-output Random Forest classifier",
+        projectType: "analytical",
+        category: ["python", "machine-learning", "data-science", "analytical"],
+        tools: ["Python", "Random Forest", "Skyfield", "PVlib", "Pandas", "Scikit-learn"],
+        highlights: [
+            {value: "Multi-output", label: "Random Forest"},
+            {value: "High Accuracy", label: "Model Performance"},
+            {value: "Feature Engineering", label: "Celestial Mechanics"}
+        ],
+        metrics: [
+            {value: "Multi-output", label: "Classifier Type"},
+            {value: "High Accuracy", label: "Across Target Variables"},
+            {value: "Robust Pipeline", label: "Data Processing"}
+        ],
+        insights: [
+            "Designed and trained multi-output Random Forest classifier for event type, intensity, and visibility prediction",
+            "Engineered predictive features using astronomical libraries (Skyfield, PVlib) for celestial mechanics",
+            "Built complete data processing pipeline from collection to feature extraction",
+            "Validated model performance achieving high accuracy across multiple target variables"
+        ],
+        businessImpact: [
+            "Accurate prediction of astronomical events for educational and research purposes",
+            "Demonstrated practical application of machine learning in astronomy",
+            "Showcased robust data pipeline development and feature engineering skills"
+        ],
+        links: {
+            github: "https://github.com/Rohit9964/astronomical-events-predictor",
+            demo: "#"
+        },
+        icon: "star"
+    },
+
+    // ========== DEVELOPMENT PROJECTS ==========
+    {
+        id: "todo-rest-api",
+        title: "To-Do List REST API",
+        description: "Spring Boot REST API for task management with full CRUD functionality",
+        projectType: "development",
+        category: ["java", "backend", "web-development", "development"],
+        tools: ["Java", "Spring Boot", "MySQL", "Maven", "REST API", "JPA"],
+        highlights: [
+            {value: "Spring Boot", label: "Framework"},
+            {value: "Full CRUD", label: "Functionality"},
+            {value: "REST API", label: "Architecture"}
+        ],
+        metrics: [
+            {value: "Spring Boot", label: "Core Framework"},
+            {value: "MySQL", label: "Database"},
+            {value: "Maven", label: "Build Tool"}
+        ],
+        insights: [
+            "Built Spring Boot REST API mastering core concepts: Beans, Dependency Injection, JPA Repositories",
+            "Implemented complete CRUD functionality for task management endpoints",
+            "Established database connectivity using Spring Data JPA with MySQL",
+            "Managed dependencies with Maven and used GitHub for version control"
+        ],
+        businessImpact: [
+            "Demonstrated backend development skills with modern Java frameworks",
+            "Showcased understanding of RESTful API design and implementation",
+            "Proved ability to work with databases and ORM principles"
+        ],
+        links: {
+            github: "https://github.com/Rohit9964/todo-rest-api",
+            demo: "#"
+        },
+        icon: "check-circle"
+    },
+    {
+        id: "medical-inventory",
+        title: "Medical Store Inventory System",
+        description: "Java-based inventory management system with MySQL integration",
+        projectType: "development",
+        category: ["java", "database", "desktop-app", "development"],
+        tools: ["Java", "MySQL", "JDBC", "OOP", "Collections Framework"],
+        highlights: [
+            {value: "Java OOP", label: "Architecture"},
+            {value: "MySQL", label: "Database"},
+            {value: "Inventory Tracking", label: "Features"}
+        ],
+        metrics: [
+            {value: "Java Collections", label: "Data Handling"},
+            {value: "JDBC", label: "Database Connectivity"},
+            {value: "CRUD Operations", label: "Core Functionality"}
+        ],
+        insights: [
+            "Built Java application with clean architecture for medical inventory management",
+            "Utilized Java Collections Framework (ArrayList, TreeSet) for efficient data processing",
+            "Applied OOP principles for modular and maintainable system design",
+            "Integrated MySQL database via JDBC for reliable data persistence"
+        ],
+        businessImpact: [
+            "Streamlined pharmacy operations with inventory tracking and low-stock alerts",
+            "Demonstrated full-stack development capabilities from UI to database",
+            "Showcased problem-solving skills in real-world application development"
+        ],
+        links: {
+            github: "https://github.com/Rohit9964/medical-inventory-system",
+            demo: "#"
+        },
+        icon: "medkit"
+    }
 ];
 
-// Display projects in grid
-function displayProjects(projects) {
-    const container = document.getElementById('projects-container');
-    
+// Display projects in separate sections
+function displayProjects() {
+    const analyticalProjects = allProjects.filter(project => project.projectType === "analytical");
+    const developmentProjects = allProjects.filter(project => project.projectType === "development");
+
+    displayProjectSection('analytical-container', analyticalProjects);
+    displayProjectSection('development-container', developmentProjects);
+}
+
+// Display projects in a specific container
+function displayProjectSection(containerId, projects) {
+    const container = document.getElementById(containerId);
+
     if (projects.length === 0) {
-        container.innerHTML = '<p>No projects found matching your filters.</p>';
+        container.innerHTML = '<p class="no-projects">No projects found in this category.</p>';
         return;
     }
 
@@ -114,7 +165,7 @@ function displayProjects(projects) {
             </div>
             <h3>${project.title}</h3>
             <p class="project-page-description">${project.description}</p>
-            
+
             <div class="project-page-highlights">
                 ${project.highlights.map(highlight => `
                     <div class="project-highlight">
@@ -132,9 +183,11 @@ function displayProjects(projects) {
                 <a href="${project.links.github}" class="project-link-btn" onclick="event.stopPropagation()" target="_blank">
                     <i class="fab fa-github"></i> Code
                 </a>
+                ${project.links.demo !== '#' ? `
                 <a href="${project.links.demo}" class="project-link-btn" onclick="event.stopPropagation()" target="_blank">
                     <i class="fas fa-external-link-alt"></i> Demo
                 </a>
+                ` : ''}
             </div>
         </div>
     `).join('');
@@ -142,7 +195,43 @@ function displayProjects(projects) {
     container.innerHTML = projectsHTML;
 }
 
-// Open project modal
+// Filter projects by category
+function filterProjects(category) {
+    if (category === 'all') {
+        displayProjects();
+        return;
+    }
+
+    const filteredAnalytical = allProjects.filter(project =>
+        project.projectType === "analytical" && project.category.includes(category)
+    );
+
+    const filteredDevelopment = allProjects.filter(project =>
+        project.projectType === "development" && project.category.includes(category)
+    );
+
+    displayProjectSection('analytical-container', filteredAnalytical);
+    displayProjectSection('development-container', filteredDevelopment);
+}
+
+// Setup filter functionality
+function setupFilters() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Update active button
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            // Filter projects
+            const filter = button.dataset.filter;
+            filterProjects(filter);
+        });
+    });
+}
+
+// Keep all other functions the same (openProjectModal, setupModalClose)
 function openProjectModal(projectId) {
     const project = allProjects.find(p => p.id === projectId);
     if (!project) return;
@@ -196,9 +285,11 @@ function openProjectModal(projectId) {
                 <a href="${project.links.github}" class="btn btn-primary" target="_blank">
                     <i class="fab fa-github"></i> View Source Code
                 </a>
+                ${project.links.demo !== '#' ? `
                 <a href="${project.links.demo}" class="btn btn-secondary" target="_blank">
                     <i class="fas fa-external-link-alt"></i> Live Demo
                 </a>
+                ` : ''}
             </div>
         </div>
     `;
@@ -207,56 +298,22 @@ function openProjectModal(projectId) {
     document.body.style.overflow = 'hidden';
 }
 
-// Setup filter functionality
-function setupFilters() {
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    
-    filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            // Update active button
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            button.classList.add('active');
-            
-            // Filter projects
-            const filter = button.dataset.filter;
-            filterProjects(filter);
-        });
-    });
-}
-
-// Filter projects by category
-function filterProjects(category) {
-    if (category === 'all') {
-        displayProjects(allProjects);
-        return;
-    }
-    
-    const filteredProjects = allProjects.filter(project => 
-        project.category.includes(category)
-    );
-    
-    displayProjects(filteredProjects);
-}
-
-// Close modal
 function setupModalClose() {
     const modal = document.getElementById('project-modal');
     const closeBtn = document.querySelector('.close-modal');
-    
+
     closeBtn.addEventListener('click', () => {
         modal.style.display = 'none';
         document.body.style.overflow = 'auto';
     });
-    
-    // Close when clicking outside modal
+
     window.addEventListener('click', (event) => {
         if (event.target === modal) {
             modal.style.display = 'none';
             document.body.style.overflow = 'auto';
         }
     });
-    
-    // Close with Escape key
+
     document.addEventListener('keydown', (event) => {
         if (event.key === 'Escape') {
             modal.style.display = 'none';
@@ -267,7 +324,7 @@ function setupModalClose() {
 
 // Initialize when page loads
 document.addEventListener('DOMContentLoaded', () => {
-    displayProjects(allProjects);
+    displayProjects();
     setupFilters();
     setupModalClose();
 });

@@ -34,7 +34,7 @@
        <div class="hero-container">
            <div class="hero-content">
                <h1>Transforming Data into <span class="highlight">Business Insights</span></h1>
-               <p>Data Analyst skilled in SQL, Python, and Tableau. Turning complex datasets into actionable recommendations.</p>
+               <p>I'm a Data Analyst with expertise in SQL, Python, and Power BI, passionate about uncovering trends and translating complex data into strategic decisions that drive business growth</p>
                <div class="hero-buttons">
                    <a href="projects.html" class="btn btn-primary">View My Projects</a>
                    <a href="resume.html" class="btn btn-secondary">View Resume</a>
@@ -70,39 +70,6 @@
            </div>
        </div>
    </section>
-    <!-- Skills Preview -->
-    <section class="skills-preview">
-        <div class="container">
-            <h2>Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Programming</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">R</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Visualization</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Tableau</span>
-                        <span class="skill-tag">Power BI</span>
-                        <span class="skill-tag">Matplotlib</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Excel</span>
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">Jupyter</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Featured Projects -->
     <section class="featured-projects">
         <div class="container">
@@ -115,7 +82,7 @@
                     </div>
                     <h3>E-commerce Analysis</h3>
                     <p class="project-description">Customer behavior and sales performance analysis</p>
-                    
+
                     <div class="project-highlights">
                         <div class="highlight">
                             <span class="highlight-value">25% → 18%</span>
@@ -150,7 +117,7 @@
                     </div>
                     <h3>COVID-19 Dashboard</h3>
                     <p class="project-description">Interactive visualization of pandemic trends</p>
-                    
+
                     <div class="project-highlights">
                         <div class="highlight">
                             <span class="highlight-value">10K+</span>
@@ -184,12 +151,51 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+   <!-- Skills Preview -->
+   <section class="skills-preview">
+       <div class="container">
+           <h2>Technical Expertise</h2>
+           <div class="skills-grid">
+               <div class="skill-category">
+                   <h3>Programming</h3>
+                   <div class="skill-tags">
+                       <span class="skill-tag">Python</span>
+                       <span class="skill-tag">SQL</span>
+                       <span class="skill-tag">Java</span>
+                   </div>
+               </div>
+               <div class="skill-category">
+                   <h3>Visualization</h3>
+                   <div class="skill-tags">
+                       <span class="skill-tag">Tableau</span>
+                       <span class="skill-tag">Power BI</span>
+                       <span class="skill-tag">Matplotlib</span>
+                   </div>
+               </div>
+               <div class="skill-category">
+                   <h3>Tools</h3>
+                   <div class="skill-tags">
+                       <span class="skill-tag">Excel</span>
+                       <span class="skill-tag">Git</span>
+                       <span class="skill-tag">Jupyter</span>
+                   </div>
+               </div>
+           </div>
+           <br>
+           <br>
+           <div class="text-center">
+               <a href="about.html" class="btn btn-outline">View All Skill</a>
+           </div>
+       </div>
+   </section>
+
+
+   <!-- Contact Section -->
     <section class="contact-section">
         <div class="container">
             <h2>Get In Touch</h2>
             <p class="contact-subtitle">I'm always open to discussing data analysis opportunities and collaborations</p>
-            
+
             <div class="contact-info-grid">
                 <div class="contact-method">
                     <div class="contact-icon">
@@ -222,7 +228,7 @@
                         <p>Open to Remote Opportunities</p>
                         <span class="contact-link">Available Worldwide</span>
                     </div>
-                </div>    
+                </div>
             </div>
         </div>
     </section>
@@ -272,7 +278,7 @@
                 ],
                 insights: [
                     "3+ purchases in first month = 60% higher retention",
-                    "AOV above $75 = 45% lower churn rate", 
+                    "AOV above $75 = 45% lower churn rate",
                     "45+ days between purchases = 3x churn risk"
                 ],
                 businessImpact: [
@@ -289,7 +295,7 @@
             },
             {
                 id: "covid-dashboard",
-                title: "COVID-19 Data Visualization", 
+                title: "COVID-19 Data Visualization",
                 description: "Interactive dashboard tracking pandemic trends and vaccination rates",
                 category: ["python", "dashboard"],
                 tools: ["Python", "Plotly", "Pandas", "Requests"],
@@ -310,7 +316,7 @@
                 ],
                 businessImpact: [
                     "Provided real-time data for public health decisions",
-                    "Enabled trend forecasting for resource allocation", 
+                    "Enabled trend forecasting for resource allocation",
                     "Improved public awareness through accessible visualization"
                 ],
                 links: {
@@ -391,19 +397,19 @@
         document.addEventListener('DOMContentLoaded', function() {
             const modal = document.getElementById('project-modal');
             const closeBtn = document.querySelector('.close-modal');
-            
+
             closeBtn.addEventListener('click', () => {
                 modal.style.display = 'none';
                 document.body.style.overflow = 'auto';
             });
-            
+
             window.addEventListener('click', (event) => {
                 if (event.target === modal) {
                     modal.style.display = 'none';
                     document.body.style.overflow = 'auto';
                 }
             });
-            
+
             document.addEventListener('keydown', (event) => {
                 if (event.key === 'Escape') {
                     modal.style.display = 'none';
