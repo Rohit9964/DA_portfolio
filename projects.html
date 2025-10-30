@@ -101,6 +101,10 @@
         <p>&copy; 2025 Rohit Honakhande. All rights reserved.</p>
     </div>
 </footer>
+
+<!-- Include the project loader -->
+
+<script src="js/project-loader.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const hamburger = document.querySelector('.hamburger');
@@ -120,8 +124,45 @@
             });
         });
     });
-</script>
 
-<script src="js/projects.js"></script>
+    // Filter functionality for projects page
+    function filterProjects(category) {
+        if (category === 'all') {
+            displayAllProjects();
+            return;
+        }
+
+        const filteredAnalytical = allProjects.filter(project =>
+            project.projectType === "analytical" && project.category.includes(category)
+        );
+
+        const filteredDevelopment = allProjects.filter(project =>
+            project.projectType === "development" && project.category.includes(category)
+        );
+
+        displayProjectSection('analytical-container', filteredAnalytical);
+        displayProjectSection('development-container', filteredDevelopment);
+    }
+
+    // Setup filter functionality
+    function setupFilters() {
+        const filterButtons = document.querySelectorAll('.filter-btn');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Update active button
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                // Filter projects
+                const filter = button.dataset.filter;
+                filterProjects(filter);
+            });
+        });
+    }
+
+    // Add setupFilters to the global initialize function in project-loader.js
+    // You'll need to update the project-loader.js file to call setupFilters()
+</script>
 </body>
 </html>

@@ -389,3 +389,26 @@
     font-style: italic;
     padding: 2rem;
 }
+
+.learning-section, .challenges-section {
+    margin: 1.5rem 0;
+}
+
+.learning-section h3, .challenges-section h3 {
+    color: var(--text-dark);
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+    border-left: 3px solid var(--primary-color);
+    padding-left: 0.75rem;
+}
+
+.learning-list, .challenges-list {
+    color: var(--text-light);
+    padding-left: 1rem;
+}
+
+.learning-list li, .challenges-list li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+    padding-left: 0.5rem;
+}

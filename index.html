@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Rohit Honakhande (RK) – Data Analyst skilled in SQL, Python, and Power BI. Turning raw data into actionable business insights.">
+    <meta name="description" content="Rohit Honakhande - Data Analyst">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RK | Data Analyst Portfolio</title>
+    <title>Rohit Honakhande | Data Analyst</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -12,327 +12,243 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-   <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="index.html">Rohit Honakhande</a>
-            </div>
-            <div class="nav-menu">
-                <a href="index.html" class="nav-link">Home</a>
-                <a href="about.html" class="nav-link">About</a>
-                <a href="projects.html" class="nav-link">Projects</a>
-                <a href="resume.html" class="nav-link">Resume</a>
-            </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <a href="index.html">Rohit Honakhande</a>
+        </div>
+        <div class="nav-menu">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="resume.html" class="nav-link">Resume</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-container">
+        <div class="hero-content">
+            <h1>Discovering Stories in Data</h1>
+            <p>I love exploring datasets to uncover the stories they hold, then sharing those discoveries through clear visuals and simple explanations.</p>
+            <div class="hero-buttons">
+                <a href="projects.html" class="btn btn-primary">View All Projects</a>
+                <a href="resume.html" class="btn btn-secondary">View Resume</a>
             </div>
         </div>
-    </nav>
-   <section class="hero">
-       <div class="hero-container">
-           <div class="hero-content">
-               <h1>Transforming Data into <span class="highlight">Business Insights</span></h1>
-               <p>I'm a Data Analyst with expertise in SQL, Python, and Power BI, passionate about uncovering trends and translating complex data into strategic decisions that drive business growth</p>
-               <div class="hero-buttons">
-                   <a href="projects.html" class="btn btn-primary">View My Projects</a>
-                   <a href="resume.html" class="btn btn-secondary">View Resume</a>
-               </div>
-           </div>
-           <div class="hero-visualization">
-               <div class="analysis-lifecycle">
-                   <div class="lifecycle-circle">
-                       <div class="lifecycle-step step-1">
-                           <div class="step-icon">🗃️</div>
-                           <div class="step-label">Collect</div>
-                       </div>
-                       <div class="lifecycle-step step-2">
-                           <div class="step-icon">🧹</div>
-                           <div class="step-label">Clean</div>
-                       </div>
-                       <div class="lifecycle-step step-3">
-                           <div class="step-icon">📊</div>
-                           <div class="step-label">Explore</div>
-                       </div>
-                       <div class="lifecycle-step step-4">
-                           <div class="step-icon">📈</div>
-                           <div class="step-label">Visualize</div>
-                       </div>
-                       <div class="lifecycle-step step-5">
-                           <div class="step-icon">💡</div>
-                           <div class="step-label">Insights</div>
-                       </div>
-                       <div class="connecting-line"></div>
-                       <div class="center-pulse"></div>
-                   </div>
-               </div>
-           </div>
-       </div>
-   </section>
-    <!-- Featured Projects -->
-    <section class="featured-projects">
-        <div class="container">
-            <h2>Featured Projects</h2>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card" onclick="openProjectModal('ecommerce-analysis')">
-                    <div class="project-icon">
-                        <i class="fas fa-shopping-cart"></i>
+        <div class="hero-visualization">
+            <div class="analysis-lifecycle">
+                <div class="lifecycle-circle">
+                    <div class="lifecycle-step step-1">
+                        <div class="step-icon">🗃️</div>
+                        <div class="step-label">Collect</div>
                     </div>
-                    <h3>E-commerce Analysis</h3>
-                    <p class="project-description">Customer behavior and sales performance analysis</p>
-
-                    <div class="project-highlights">
-                        <div class="highlight">
-                            <span class="highlight-value">25% → 18%</span>
-                            <span class="highlight-label">Churn Reduction</span>
-                        </div>
-                        <div class="highlight">
-                            <span class="highlight-value">$125K</span>
-                            <span class="highlight-label">Annual Savings</span>
-                        </div>
+                    <div class="lifecycle-step step-2">
+                        <div class="step-icon">🧹</div>
+                        <div class="step-label">Clean</div>
                     </div>
-
-                    <div class="project-tools">
-                        <span class="tool">SQL</span>
-                        <span class="tool">Python</span>
-                        <span class="tool">Tableau</span>
+                    <div class="lifecycle-step step-3">
+                        <div class="step-icon">📊</div>
+                        <div class="step-label">Explore</div>
                     </div>
-
-                    <div class="project-links">
-                        <a href="https://github.com/yourname/ecommerce-analysis" class="link-btn" onclick="event.stopPropagation()" target="_blank">
-                            <i class="fab fa-github"></i> Code
-                        </a>
-                        <a href="https://public.tableau.com/your-dashboard" class="link-btn" onclick="event.stopPropagation()" target="_blank">
-                            <i class="fas fa-external-link-alt"></i> Demo
-                        </a>
+                    <div class="lifecycle-step step-4">
+                        <div class="step-icon">📈</div>
+                        <div class="step-label">Visualize</div>
                     </div>
+                    <div class="lifecycle-step step-5">
+                        <div class="step-icon">💡</div>
+                        <div class="step-label">Insights</div>
+                    </div>
+                    <div class="connecting-line"></div>
+                    <div class="center-pulse"></div>
                 </div>
-
-                <!-- Project 2 -->
-                <div class="project-card" onclick="openProjectModal('covid-dashboard')">
-                    <div class="project-icon">
-                        <i class="fas fa-heartbeat"></i>
-                    </div>
-                    <h3>COVID-19 Dashboard</h3>
-                    <p class="project-description">Interactive visualization of pandemic trends</p>
-
-                    <div class="project-highlights">
-                        <div class="highlight">
-                            <span class="highlight-value">10K+</span>
-                            <span class="highlight-label">Views</span>
-                        </div>
-                        <div class="highlight">
-                            <span class="highlight-value">Real-time</span>
-                            <span class="highlight-label">Data</span>
-                        </div>
-                    </div>
-
-                    <div class="project-tools">
-                        <span class="tool">Python</span>
-                        <span class="tool">Plotly</span>
-                        <span class="tool">Pandas</span>
-                    </div>
-
-                    <div class="project-links">
-                        <a href="https://github.com/yourname/covid-dashboard" class="link-btn" onclick="event.stopPropagation()" target="_blank">
-                            <i class="fab fa-github"></i> Code
-                        </a>
-                        <a href="https://your-name-covid-dashboard.streamlit.app" class="link-btn" onclick="event.stopPropagation()" target="_blank">
-                            <i class="fas fa-external-link-alt"></i> Demo
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center">
-                <a href="projects.html" class="btn btn-outline">View All Projects</a>
-            </div>
-        </div>
-    </section>
-
-   <!-- Skills Preview -->
-   <section class="skills-preview">
-       <div class="container">
-           <h2>Technical Expertise</h2>
-           <div class="skills-grid">
-               <div class="skill-category">
-                   <h3>Programming</h3>
-                   <div class="skill-tags">
-                       <span class="skill-tag">Python</span>
-                       <span class="skill-tag">SQL</span>
-                       <span class="skill-tag">Java</span>
-                   </div>
-               </div>
-               <div class="skill-category">
-                   <h3>Visualization</h3>
-                   <div class="skill-tags">
-                       <span class="skill-tag">Tableau</span>
-                       <span class="skill-tag">Power BI</span>
-                       <span class="skill-tag">Matplotlib</span>
-                   </div>
-               </div>
-               <div class="skill-category">
-                   <h3>Tools</h3>
-                   <div class="skill-tags">
-                       <span class="skill-tag">Excel</span>
-                       <span class="skill-tag">Git</span>
-                       <span class="skill-tag">Jupyter</span>
-                   </div>
-               </div>
-           </div>
-           <br>
-           <br>
-           <div class="text-center">
-               <a href="about.html" class="btn btn-outline">View All Skill</a>
-           </div>
-       </div>
-   </section>
-
-
-   <!-- Contact Section -->
-    <section class="contact-section">
-        <div class="container">
-            <h2>Get In Touch</h2>
-            <p class="contact-subtitle">I'm always open to discussing data analysis opportunities and collaborations</p>
-
-            <div class="contact-info-grid">
-                <div class="contact-method">
-                    <div class="contact-icon">
-                        <i class="fas fa-phone"></i>
-                    </div>
-                    <div class="contact-details">
-                        <h3>Phone</h3>
-                        <p>+91 9964672812</p>
-                        <a href="tel:+919964672812" class="contact-link">Call Now</a>
-                    </div>
-                </div>
-
-                <div class="contact-method">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div class="contact-details">
-                        <h3>Email</h3>
-                        <p>rohithonakhande2@gmail.com</p>
-                        <a href="mailto:rohithonakhande2@gmail.com" class="contact-link">Send Email</a>
-                    </div>
-                </div>
-
-                <div class="contact-method">
-                    <div class="contact-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div class="contact-details">
-                        <h3>Location</h3>
-                        <p>Open to Remote Opportunities</p>
-                        <span class="contact-link">Available Worldwide</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/rohit-honakhande-083538259/"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/Rohit9964"><i class="fab fa-github"></i></a>
-                <a href="#">
-                    <img src="assets/BI_img.png" alt="Power BI" style="width:24px; height:24px;">
-                </a>
-            </div>
-            <p>&copy; 2025 Rohit Honakhande. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- Project Detail Modal -->
-    <div id="project-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <div id="modal-content">
-                <!-- Dynamic content will be inserted here -->
             </div>
         </div>
     </div>
+</section>
 
-    <!-- Include projects data and modal functionality -->
-    <script>
-        // Include the projects data and modal functions
-        const allProjects = [
-            {
-                id: "ecommerce-analysis",
-                title: "E-commerce Customer Analysis",
-                description: "Customer behavior and sales performance analysis to reduce churn",
-                category: ["sql", "python", "dashboard"],
-                tools: ["SQL", "Python", "Tableau", "Pandas"],
-                highlights: [
-                    {value: "25% → 18%", label: "Churn Reduction"},
-                    {value: "$125K", label: "Annual Savings"},
-                    {value: "45%", label: "Retention Improvement"}
-                ],
-                metrics: [
-                    {value: "25% → 18%", label: "Churn Rate Reduction"},
-                    {value: "$125K", label: "Annual Cost Savings"},
-                    {value: "45%", label: "Retention Improvement"}
-                ],
-                insights: [
-                    "3+ purchases in first month = 60% higher retention",
-                    "AOV above $75 = 45% lower churn rate",
-                    "45+ days between purchases = 3x churn risk"
-                ],
-                businessImpact: [
-                    "Implemented targeted email campaigns for at-risk customers",
-                    "Created customer segmentation for personalized marketing",
-                    "Reduced churn rate by 7 percentage points"
-                ],
-                links: {
-                    github: "https://github.com/yourname/ecommerce-analysis",
-                    demo: "https://public.tableau.com/your-dashboard"
-                },
-                icon: "shopping-cart",
-                featured: true
-            },
-            {
-                id: "covid-dashboard",
-                title: "COVID-19 Data Visualization",
-                description: "Interactive dashboard tracking pandemic trends and vaccination rates",
-                category: ["python", "dashboard"],
-                tools: ["Python", "Plotly", "Pandas", "Requests"],
-                highlights: [
-                    {value: "10K+", label: "Views"},
-                    {value: "Real-time", label: "Data"},
-                    {value: "5+", label: "Data Sources"}
-                ],
-                metrics: [
-                    {value: "10K+", label: "Dashboard Views"},
-                    {value: "Real-time", label: "Data Updates"},
-                    {value: "95%", label: "User Satisfaction"}
-                ],
-                insights: [
-                    "Vaccination rates correlated with case reduction",
-                    "Regional hotspots identified 2 weeks earlier",
-                    "Mobile usage dominated dashboard access"
-                ],
-                businessImpact: [
-                    "Provided real-time data for public health decisions",
-                    "Enabled trend forecasting for resource allocation",
-                    "Improved public awareness through accessible visualization"
-                ],
-                links: {
-                    github: "https://github.com/yourname/covid-dashboard",
-                    demo: "https://your-name-covid-dashboard.streamlit.app"
-                },
-                icon: "heartbeat",
-                featured: false
+<!-- Featured Projects -->
+<section class="featured-projects">
+    <div class="container">
+        <h2>Featured Projects</h2>
+        <div id="featured-projects-container" class="projects-grid">
+            <!-- Projects will be loaded dynamically here -->
+        </div>
+        <div class="text-center">
+            <a href="projects.html" class="btn btn-outline">View All Projects</a>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Preview -->
+<section class="skills-preview">
+    <div class="container">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Programming</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Java</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Visualization</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Tableau</span>
+                    <span class="skill-tag">Power BI</span>
+                    <span class="skill-tag">Matplotlib</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Tools</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Excel</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Jupyter</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact-section">
+    <div class="container">
+        <h2>Get In Touch</h2>
+        <div class="contact-info-grid">
+            <div class="contact-method">
+                <div class="contact-icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-details">
+                    <h3>Phone</h3>
+                    <p>+91 9964672812</p>
+                    <a href="tel:+919964672812" class="contact-link">Call Now</a>
+                </div>
+            </div>
+            <div class="contact-method">
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-details">
+                    <h3>Email</h3>
+                    <p>rohithonakhande2@gmail.com</p>
+                    <a href="mailto:rohithonakhande2@gmail.com" class="contact-link">Send Email</a>
+                </div>
+            </div>
+            <div class="contact-method">
+                <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-details">
+                    <h3>Location</h3>
+                    <p>Open to Remote Opportunities</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/rohit-honakhande-083538259/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Rohit9964"><i class="fab fa-github"></i></a>
+            <a href="#">
+                <img src="assets/BI_img.png" alt="Power BI" style="width:24px; height:24px;">
+            </a>
+        </div>
+        <p>&copy; 2025 Rohit Honakhande. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Project Detail Modal -->
+<div id="project-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div id="modal-content">
+            <!-- Dynamic content will be inserted here -->
+        </div>
+    </div>
+</div>
+
+<!-- Simple Home Page Script -->
+<script>
+    async function loadAndDisplayFeaturedProjects() {
+        try {
+            // Load projects from JSON
+            const response = await fetch('data/projects.json');
+            const data = await response.json();
+
+            // Filter only featured projects
+            const featuredProjects = data.projects.filter(project => project.featured === true);
+
+            const container = document.getElementById('featured-projects-container');
+
+            if (featuredProjects.length === 0) {
+                container.innerHTML = '<p>No featured projects found.</p>';
+                return;
             }
-        ];
 
-        // Open project modal
-        function openProjectModal(projectId) {
-            const project = allProjects.find(p => p.id === projectId);
+            // Use same classes as before
+            const projectsHTML = featuredProjects.map(project => `
+                <div class="project-card" onclick="openProjectModal('${project.id}')">
+                    <div class="project-icon">
+                        <i class="fas fa-${project.icon}"></i>
+                    </div>
+                    <h3>${project.title}</h3>
+                    <p class="project-description">${project.description}</p>
+
+                    <div class="project-highlights">
+                        ${project.highlights.map(highlight => `
+                            <div class="highlight">
+                                <span class="highlight-value">${highlight.value}</span>
+                                <span class="highlight-label">${highlight.label}</span>
+                            </div>
+                        `).join('')}
+                    </div>
+
+                    <div class="project-tools">
+                        ${project.tools.slice(0, 3).map(tool => `<span class="tool">${tool}</span>`).join('')}
+                    </div>
+
+                    <div class="project-links">
+                        <a href="${project.links.github}" class="link-btn" onclick="event.stopPropagation()" target="_blank">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        ${project.links.demo !== '#' ? `
+                        <a href="${project.links.demo}" class="link-btn" onclick="event.stopPropagation()" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Demo
+                        </a>
+                        ` : ''}
+                    </div>
+                </div>
+            `).join('');
+
+            container.innerHTML = projectsHTML;
+
+        } catch (error) {
+            console.error('Error loading featured projects:', error);
+        }
+    }
+
+    // Modal function
+    async function openProjectModal(projectId) {
+        try {
+            const response = await fetch('data/projects.json');
+            const data = await response.json();
+            const project = data.projects.find(p => p.id === projectId);
+
             if (!project) return;
 
             const modalContent = document.getElementById('modal-content');
@@ -360,11 +276,11 @@
                     </div>
 
                     <div class="insights-section">
-                        <h3>Key Insights</h3>
+                        <h3>What I Discovered</h3>
                         <div class="insights-grid">
                             ${project.insights.map(insight => `
                                 <div class="insight-item">
-                                    <i class="fas fa-chart-line"></i>
+                                    <i class="fas fa-lightbulb"></i>
                                     <div>
                                         <p>${insight}</p>
                                     </div>
@@ -373,73 +289,81 @@
                         </div>
                     </div>
 
-                    <div class="actions-section">
-                        <h3>Business Impact</h3>
-                        <ul class="impact-list">
-                            ${project.businessImpact.map(impact => `<li>${impact}</li>`).join('')}
+                    <div class="learning-section">
+                        <h3>What I Learned</h3>
+                        <ul class="learning-list">
+                            ${project.whatILearned.map(learning => `<li>${learning}</li>`).join('')}
                         </ul>
                     </div>
 
                     <div class="modal-links">
                         <a href="${project.links.github}" class="btn btn-primary" target="_blank">
-                            <i class="fab fa-github"></i> View Source Code
+                            <i class="fab fa-github"></i> View Code
                         </a>
+                        ${project.links.demo !== '#' ? `
                         <a href="${project.links.demo}" class="btn btn-secondary" target="_blank">
                             <i class="fas fa-external-link-alt"></i> Live Demo
                         </a>
+                        ` : ''}
                     </div>
                 </div>
             `;
 
             document.getElementById('project-modal').style.display = 'block';
             document.body.style.overflow = 'hidden';
+
+        } catch (error) {
+            console.error('Error loading project details:', error);
         }
+    }
 
-        // Close modal functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            const modal = document.getElementById('project-modal');
-            const closeBtn = document.querySelector('.close-modal');
+    // Modal close functionality
+    function setupModalClose() {
+        const modal = document.getElementById('project-modal');
+        const closeBtn = document.querySelector('.close-modal');
 
-            closeBtn.addEventListener('click', () => {
+        closeBtn.addEventListener('click', () => {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+
+        window.addEventListener('click', (event) => {
+            if (event.target === modal) {
                 modal.style.display = 'none';
                 document.body.style.overflow = 'auto';
-            });
+            }
+        });
 
-            window.addEventListener('click', (event) => {
-                if (event.target === modal) {
-                    modal.style.display = 'none';
-                    document.body.style.overflow = 'auto';
-                }
-            });
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+    }
 
-            document.addEventListener('keydown', (event) => {
-                if (event.key === 'Escape') {
-                    modal.style.display = 'none';
-                    document.body.style.overflow = 'auto';
-                }
+    // Initialize home page
+    document.addEventListener('DOMContentLoaded', function() {
+        loadAndDisplayFeaturedProjects();
+        setupModalClose();
+
+        // Hamburger menu
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
             });
         });
-    </script>
-   <script>
-       document.addEventListener('DOMContentLoaded', function() {
-           const hamburger = document.querySelector('.hamburger');
-           const navMenu = document.querySelector('.nav-menu');
-
-           hamburger.addEventListener('click', function() {
-               hamburger.classList.toggle('active');
-               navMenu.classList.toggle('active');
-           });
-
-           // Close menu when clicking on a link
-           const navLinks = document.querySelectorAll('.nav-link');
-           navLinks.forEach(link => {
-               link.addEventListener('click', () => {
-                   hamburger.classList.remove('active');
-                   navMenu.classList.remove('active');
-               });
-           });
-       });
-   </script>
-    <script src="js/script.js"></script>
+    });
+</script>
 </body>
 </html>

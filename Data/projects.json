@@ -1,0 +1,160 @@
+{
+  "projects": [
+    {
+      "id": "play-store-analysis",
+      "title": "Google Play Store Analysis",
+      "description": "I analyzed app store data to understand what makes mobile apps successful",
+      "projectType": "analytical",
+      "category": ["python", "data-analysis", "analytical"],
+      "tools": ["Python", "Pandas", "Matplotlib", "Seaborn", "Jupyter"],
+      "highlights": [
+        {"value": "First Big", "label": "Dataset"},
+        {"value": "200x Better", "label": "Video Apps"},
+        {"value": "168x More", "label": "Free App Installs"}
+      ],
+      "metrics": [
+        {"value": "13.6% → 0%", "label": "Missing Data Fixed"},
+        {"value": "200x", "label": "Video App Advantage"},
+        {"value": "168x", "label": "Free vs Paid Difference"}
+      ],
+      "insights": [
+        "Video player apps get 200x more downloads compared to competition",
+        "Free apps get 168x more installs than paid apps",
+        "Apps with more reviews usually have more downloads"
+      ],
+      "whatILearned": [
+        "How to clean real-world datasets with missing values",
+        "Making charts that clearly show the patterns I found",
+        "Why data quality check is important before analysis"
+      ],
+      "challenges": [
+        "13.6% of the data was missing - had to learn how to handle it",
+        "Some app sizes were written differently (MB vs GB)",
+        "Making sure my findings made sense in the real world"
+      ],
+      "links": {
+        "github": "https://github.com/Rohit9964/Google-Play-Store-App-Analysis",
+        "demo": "https://nbviewer.org/github/Rohit9964/Google-Play-Store-App-Analysis/blob/main/Google%20Play%20Store%20App%20Analysis.ipynb"
+      },
+      "icon": "mobile-alt",
+      "featured": true
+    },
+    {
+      "id": "astronomical-predictor",
+      "title": "Space Events Predictor",
+      "description": "My first machine learning project that predicts events like meteor showers",
+      "projectType": "analytical",
+      "category": ["python", "machine-learning", "analytical"],
+      "tools": ["Python", "Random Forest", "Skyfield", "PVlib", "Pandas"],
+      "highlights": [
+        {"value": "First ML", "label": "Project"},
+        {"value": "85%", "label": "Accuracy"},
+        {"value": "4 Weeks", "label": "Learning Time"}
+      ],
+      "metrics": [
+        {"value": "85%", "label": "Prediction Accuracy"},
+        {"value": "3 Types", "label": "Events Predicted"},
+        {"value": "First Try", "label": "Machine Learning"}
+      ],
+      "insights": [
+        "The program can predict when we'll see meteor showers and eclipses",
+        "It uses date and location to make these predictions",
+        "Machine learning can help us understand space patterns"
+      ],
+      "whatILearned": [
+        "How to build my first machine learning model",
+        "Working with astronomy data and special libraries",
+        "The importance of testing predictions in real life"
+      ],
+      "challenges": [
+        "Learning how machine learning works from scratch",
+        "Understanding the complex astronomy calculations",
+        "Making sure the predictions were actually useful"
+      ],
+      "links": {
+        "github": "https://github.com/Rohit9964/Astronomical_event_predictor-.git",
+        "demo": "#"
+      },
+      "icon": "star",
+      "featured": true
+    },
+    {
+      "id": "todo-rest-api",
+      "title": "To-Do List API",
+      "description": "Built a backend system for managing tasks to learn web development",
+      "projectType": "development",
+      "category": ["java", "backend", "development"],
+      "tools": ["Java", "Spring Boot", "MySQL", "REST API"],
+      "highlights": [
+        {"value": "Spring Boot", "label": "Framework Learned"},
+        {"value": "Full CRUD", "label": "Operations"},
+        {"value": "First API", "label": "Project"}
+      ],
+      "metrics": [
+        {"value": "Spring Boot", "label": "New Framework"},
+        {"value": "MySQL", "label": "Database Used"},
+        {"value": "REST API", "label": "Architecture"}
+      ],
+      "insights": [
+        "Learned how to build web APIs with Spring Boot",
+        "Understood how databases connect to applications",
+        "Practiced creating, reading, updating and deleting data"
+      ],
+      "whatILearned": [
+        "How to build REST APIs from scratch",
+        "Connecting Java applications to databases",
+        "Using Spring Boot for backend development"
+      ],
+      "challenges": [
+        "Learning Spring Boot concepts for the first time",
+        "Setting up database connections properly",
+        "Understanding how HTTP requests work"
+      ],
+      "links": {
+        "github": "https://github.com/RKofficial1/To-do-App",
+        "demo": "#"
+      },
+      "icon": "check-circle",
+      "featured": false
+    },
+    {
+      "id": "medical-inventory",
+      "title": "Medical Store Inventory System",
+      "description": "Created a desktop application to manage medicine stock for a pharmacy",
+      "projectType": "development",
+      "category": ["java", "database", "development"],
+      "tools": ["Java", "MySQL", "JDBC", "OOP"],
+      "highlights": [
+        {"value": "Java OOP", "label": "Principles"},
+        {"value": "MySQL", "label": "Database"},
+        {"value": "Real-world", "label": "Problem"}
+      ],
+      "metrics": [
+        {"value": "Java", "label": "Main Language"},
+        {"value": "MySQL", "label": "Data Storage"},
+        {"value": "Desktop App", "label": "Application Type"}
+      ],
+      "insights": [
+        "Built a complete application from start to finish",
+        "Used object-oriented programming for clean code",
+        "Connected the app to a database for data storage"
+      ],
+      "whatILearned": [
+        "How to build desktop applications with Java",
+        "Connecting to databases using JDBC",
+        "Applying OOP principles in a real project"
+      ],
+      "challenges": [
+        "Designing the application architecture",
+        "Making the user interface easy to use",
+        "Ensuring data was saved correctly in the database"
+      ],
+      "links": {
+        "github": "https://github.com/Rohit9964/Medical-Store-management.git",
+        "demo": "#"
+      },
+      "icon": "medkit",
+      "featured": false
+    }
+  ]
+}
