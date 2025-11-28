@@ -198,6 +198,48 @@
       },
       "icon": "medkit",
       "featured": false
+    },
+    {
+      "id": "algo-visualization",
+      "title": "Algorithm Visualization Tool",
+      "description": "Built a Java-based visualization tool to understand and compare searching and sorting algorithms.",
+      "projectType": "development",
+      "category": ["java", "database", "development"],
+      "tools": ["Java", "Spring Boot", "HTML/CSS", "JavaScript"],
+      "highlights": [
+        {"value": "7+", "label": "Sorting Algorithms"},
+        {"value": "2", "label": "Searching Algorithms"},
+        {"value": "Real-time", "label": "Visual Output"}
+      ],
+      "metrics": [
+        {"value": "Binary + Linear", "label": "Search Methods"},
+        {"value": "Bubble → QuickSort", "label": "Sorting Range"},
+        {"value": "Controller + Service", "label": "Clean Structure"}
+      ],
+      "insights": [
+        "Sorting logic comparison through animations",
+        "Binary vs Linear search performance difference",
+        "Time complexity varies by data size",
+        "MergeSort & QuickSort scale better",
+        "Helps beginners visualize algorithm flow"
+      ],
+      "whatILearned": [
+        "DSA implementation in Java",
+        "Spring Boot project structuring",
+        "Building visual interaction for algorithms",
+        "Model → Controller communication flow"
+      ],
+      "challenges": [
+        "Synced animation with algorithm steps",
+        "Maintaining clean code separation",
+        "Performance handling on large inputs"
+      ],
+      "links": {
+        "github": "https://github.com/Rohit9964/Algo-visualization-.git"
+      },
+      "icon": "code",
+      "featured": false
     }
+
   ]
 }
