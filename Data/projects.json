@@ -80,7 +80,7 @@
         "demo": "https://nbviewer.org/github/Rohit9964/Google-Play-Store-App-Analysis/blob/main/Google%20Play%20Store%20App%20Analysis.ipynb"
       },
       "icon": "mobile-alt",
-      "featured": true
+      "featured": false
     },
     {
       "id": "astronomical-predictor",
