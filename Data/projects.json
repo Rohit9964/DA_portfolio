@@ -1,5 +1,48 @@
 {
   "projects": [
+
+    {
+      "id": "sales-dashboard-analysis",
+      "title": "Sales & Revenue Dashboard",
+      "description": "Built an interactive Power BI dashboard to analyze revenue, profit margin, and top market performance.",
+      "projectType": "analytical",
+      "category": ["power-bi", "business-analytics", "dashboard"],
+      "tools": ["Power BI", "DAX", "Excel", "Data Modeling"],
+      "highlights": [
+        {"value": "₹ 985M+", "label": "Revenue"},
+        {"value": "24.7M+", "label": "Profit Margin"},
+        {"value": "2M+", "label": "Sales Qty"}
+      ],
+      "metrics": [
+        {"value": "52.8%", "label": "Delhi NCR Revenue Share"},
+        {"value": "4.9%", "label": "Highest Profit – Surat"},
+        {"value": "₹ 413M", "label": "Top Customer Revenue"}
+      ],
+      "insights": [
+        "Delhi NCR leads revenue share (52.8%)",
+        "Surat delivers highest profit margin",
+        "Electricalsara Stores contributes ₹413M revenue",
+        "Revenue trend declines in 2020",
+        "Profit ≠ Sales volume always"
+      ],
+      "whatILearned": [
+        "Power BI dashboard design",
+        "DAX calculations for KPIs",
+        "Filters, slicers, drill analysis",
+        "Visual-based business storytelling"
+      ],
+      "challenges": [
+        "Revenue & profit comparison modeling",
+        "Clarity while showing multiple KPIs",
+        "Balancing visual layout & readability"
+      ],
+      "links": {
+        "github": "https://github.com/Rohit9964/sales_dashboard.git"
+      },
+      "icon": "chart-line",
+      "featured": true
+    },
+
     {
       "id": "play-store-analysis",
       "title": "Google Play Store Analysis",
